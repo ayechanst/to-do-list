@@ -1,3 +1,5 @@
+import { project } from './pojects.js'
+
 const content = document.getElementById ('content')
 
 let skeleton = {
@@ -13,14 +15,20 @@ let skeleton = {
         content.appendChild(titleContainer)
     },
     body: function makeBody() {
+        const body = document.createElement('div')
         const dailyBody = document.createElement('div')
+        const navBar = document.createElement('div')
         const projectBody = document.createElement('div')
         //
-        dailyBody.className = 'daily body'
-        projectBody.className  = 'project body'
+        body.className = 'body'
+        dailyBody.className = 'daily daily-and-project'
+        navBar.className = 'nav-bar'
+        projectBody.className = 'project daily-and-project'
         //
-        content.appendChild(dailyBody)
-        content.appendChild(projectBody)
+        body.appendChild(dailyBody)
+        body.appendChild(navBar)
+        body.appendChild(projectBody)
+        content.appendChild(body)
     },
     foot: function makeFoot() {
         const foot = document.createElement('div')
@@ -36,15 +44,9 @@ let skeleton = {
 
 }
 
-let generateHTML = {
-    create(page) {
-        if (content.innerHTML == false || page === 'home') {
+
+
             skeleton.head()
             skeleton.body()
+            project.daily()
             skeleton.foot()
-
-        }
-    }
-}
-
-generateHTML.create()

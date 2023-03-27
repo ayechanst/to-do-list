@@ -1,3 +1,38 @@
 body {
     background-color: darkseagreen;
 }
+
+/* skeleton */
+.title-container {
+    display: flex;
+    justify-content: center;
+    background-color: palegoldenrod;
+}
+
+.body {
+    display: flex;
+    height: 400px;
+    background-color: darkkhaki;
+}
+
+.foot {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* body */
+
+
+.daily-and-project {
+    width: 100px;
+    flex-grow: 1;
+    height: auto;
+    background-color: beige;
+}
+
+.nav-bar {
+    width: 200px;
+    height: auto;
+    background-color: palegoldenrod;
+}
