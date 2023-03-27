@@ -1,7 +1,6 @@
-
 const daily = document.querySelector('daily')
 
-export class ToDoListContainer {
+class ToDoListContainer {
     constructor(type) {
         this.type = type
     }

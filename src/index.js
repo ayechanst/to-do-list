@@ -1,8 +1,7 @@
-import { project } from './pojects.js'
-
+import { project } from 'projects.js'
 const content = document.getElementById ('content')
 
-let skeleton = {
+export let skeleton = {
     head: function makeHead() {
         const titleContainer = document.createElement('div')
         const title = document.createElement('h1')
@@ -44,9 +43,7 @@ let skeleton = {
 
 }
 
-
-
-            skeleton.head()
-            skeleton.body()
-            project.daily()
-            skeleton.foot()
+skeleton.head()
+skeleton.body()
+project.daily()
+skeleton.foot()

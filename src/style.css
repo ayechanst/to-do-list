@@ -25,7 +25,6 @@ body {
 
 
 .daily-and-project {
-    width: 100px;
     flex-grow: 1;
     height: auto;
     background-color: beige;
