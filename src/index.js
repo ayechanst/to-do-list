@@ -47,9 +47,11 @@ export class skeleton {
 const skeletonHead = new skeleton();
 const skeletonBody = new skeleton();
 const skeletonFoot = new skeleton();
-const daily = new ToDoListContainer();
+const daily = new ToDoListContainer('daily');
+const project = new ToDoListContainer('project');
 
 skeletonHead.head();
 skeletonBody.body();
-daily.daily('daily');
+daily.makeContainers();
+project.makeContainers();
 skeletonFoot.foot();
