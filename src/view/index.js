@@ -1,4 +1,4 @@
-import { ToDoListContainer } from './projects';
+import { ToDoListContainer } from '../model/projects';
 
 export class skeleton {
   head() {
@@ -16,21 +16,18 @@ export class skeleton {
   body() {
     const content = document.getElementById('content');
     const body = document.createElement('div');
-    const bodyContent = document.createElement('div');
     const dailyBody = document.createElement('div');
     const navBar = document.createElement('div');
     const projectBody = document.createElement('div');
     //
     body.className = 'body';
-    bodyContent.className = 'body-content';
     dailyBody.className = 'daily daily-and-project';
     navBar.className = 'nav-bar';
     projectBody.className = 'project daily-and-project';
     //
-    body.appendChild(bodyContent);
-    bodyContent.appendChild(dailyBody);
-    bodyContent.appendChild(navBar);
-    bodyContent.appendChild(projectBody);
+    body.appendChild(dailyBody);
+    body.appendChild(navBar);
+    body.appendChild(projectBody);
     content.appendChild(body);
   }
   foot() {

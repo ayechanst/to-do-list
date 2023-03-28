@@ -16,7 +16,7 @@ export class ToDoListContainer {
       daily.appendChild(title);
       daily.appendChild(button);
     } else if (this.type === 'project') {
-      title.innerHTML = '*project name*';
+      title.innerHTML = 'Project';
       button.innerHTML = 'Add Project';
       button.className = 'add-project';
       project.appendChild(title);
