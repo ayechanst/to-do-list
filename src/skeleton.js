@@ -1,4 +1,4 @@
-export class skeleton {
+export class Build {
   head() {
     const content = document.getElementById('content');
     const titleContainer = document.createElement('div');
@@ -15,16 +15,13 @@ export class skeleton {
     const content = document.getElementById('content');
     const body = document.createElement('div');
     const dailyBody = document.createElement('div');
-    const navBar = document.createElement('div');
     const projectBody = document.createElement('div');
     //
     body.className = 'body';
     dailyBody.className = 'daily daily-and-project';
-    navBar.className = 'nav-bar';
     projectBody.className = 'project daily-and-project';
     //
     body.appendChild(dailyBody);
-    body.appendChild(navBar);
     body.appendChild(projectBody);
     content.appendChild(body);
   }
