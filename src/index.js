@@ -1,16 +1,18 @@
-import { ToDoListContainer } from '../projects';
+import { Build } from './skeleton';
 
 class Load {
   home() {
-    const skeletonHead = new Build();
-    const skeletonBody = new Build();
-    const skeletonFoot = new Build();
-    skeletonHead.head();
-    skeletonBody.body();
-    skeletonFoot.foot();
+    const head = new Build();
+    const body = new Build();
+    const foot = new Build();
+    // const project = new Build();
+    head.head();
+    // project.project();
+    body.body();
+    foot.foot();
   }
   project() {
-    // load the projects
+    // for each project in project data base, load project name
   }
   tasks() {
     // load the tasks

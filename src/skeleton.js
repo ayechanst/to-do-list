@@ -37,4 +37,19 @@ export class Build {
     foot.appendChild(byLine);
     content.appendChild(foot);
   }
+  project() {
+    const project = document.createElement('div');
+    const createProjectBtn = document.createElement('button');
+    const projectBody = document.createElement('div');
+    //
+    project.className = 'project';
+    projectBody.className = 'project-body';
+    //
+    project.innerHTML = 'Complete Icewind Dale';
+    createProjectBtn.innerHTML = 'Create New Project';
+    //
+    project.appendChild(createProjectBtn);
+    project.appendChild(projectBody);
+    content.appendChild(project);
+  }
 }

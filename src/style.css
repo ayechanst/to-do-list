@@ -21,16 +21,9 @@ body {
   justify-content: center;
 }
 
-/* body */
+/* project */
 
-.daily-and-project {
-  flex-grow: 1;
-  height: auto;
-  background-color: beige;
-}
-
-.nav-bar {
-  width: 200px;
-  height: auto;
-  background-color: palegoldenrod;
+.project {
+  width: 400px;
+  background-color: cadetblue;
 }
