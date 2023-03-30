@@ -1,5 +1,4 @@
 import { Build } from './skeleton';
-import { buttonLogic } from './logic';
 
 class Load {
   home() {
@@ -7,8 +6,11 @@ class Load {
     const body = new Build();
     const foot = new Build();
     const project = new Build();
+    const item = new Build();
     head.head();
-    project.project();
+    project.projectCard();
+    item.toDoItemCard();
+
     body.body();
     foot.foot();
     buttonLogic();

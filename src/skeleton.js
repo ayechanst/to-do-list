@@ -11,6 +11,7 @@ export class Build {
     titleContainer.appendChild(title);
     content.appendChild(titleContainer);
   }
+
   body() {
     const content = document.getElementById('content');
     const body = document.createElement('div');
@@ -25,6 +26,7 @@ export class Build {
     body.appendChild(projectBody);
     content.appendChild(body);
   }
+
   foot() {
     const content = document.getElementById('content');
     const foot = document.createElement('div');
@@ -37,7 +39,8 @@ export class Build {
     foot.appendChild(byLine);
     content.appendChild(foot);
   }
-  project() {
+
+  projectCard() {
     const project = document.createElement('div');
     let createProjectBtn = document.createElement('button');
     const projectBody = document.createElement('div');
@@ -56,5 +59,24 @@ export class Build {
     project.appendChild(createProjectBtn);
     project.appendChild(projectBody);
     content.appendChild(project);
+  }
+
+  toDoItemCard() {
+    const toDoItem = document.createElement('div');
+    let createToDoItemBtn = document.createElement('button');
+    const toDoItemBody = document.createElement('div');
+    //
+    toDoItem.className = 'to-do-item';
+    createToDoItemBtn.id = 'createToDoItemBtn';
+    toDoItemBody.className = 'to-do-item-body';
+    //
+    toDoItem.innerHTML = 'Prepare next session';
+    createToDoItemBtn.innerHTML = 'Create New To-Do';
+    //
+    createToDoItemBtn.addEventListener('click', () => {
+      console.log('make to do!');
+    });
+    toDoItemBody.appendChild(createToDoItemBtn);
+    content.appendChild(toDoItemBody);
   }
 }
