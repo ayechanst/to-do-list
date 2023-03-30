@@ -27,8 +27,7 @@ body {
 
 .projects-container {
   display: flex;
-  justify-content: center;
-  background-color: paleturquoise;
+  background-color: rgb(155, 43, 43);
   flex-basis: 700px;
 }
 
@@ -38,9 +37,34 @@ body {
 }
 
 .projects-nav {
+  display: flex;
+  flex-direction: column;
   background-color: palevioletred;
+  align-items: center;
   flex-basis: 200px;
 }
+
+.nav-title {
+  padding-top: 10px;
+}
+
+#projects-list {
+  height: 300px;
+}
+
+.projects-presentation {
+  margin: 20px;
+  display: flex;
+  flex-basis: 400px;
+  background-color: darkslategray;
+  justify-content: center;
+}
+
+.project-title {
+  padding-top: 10px;
+}
+
+/* Footer Shit */
 
 .footer-container {
   padding-top: 10px;

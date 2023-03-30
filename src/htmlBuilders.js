@@ -1,14 +1,13 @@
 export class Build {
-  projectCard(name) {
+  projectCard() {
+    const createProjectBtn = document.querySelectorAll('.create-project-btn');
     const projectTitle = document.createElement('div');
-    let createProjectBtn = document.createElement('button');
     const projectContainer = document.createElement('section');
-    //
+    // the card is going to have buttons delete or mark complete
     projectTitle.className = 'project-title';
-    createProjectBtn.id = 'createProjectBtn';
     projectContainer.className = 'project-container';
     //
-    project.innerHTML = `${name}`;
+    project.innerHTML = `example project`;
     createProjectBtn.innerHTML = 'Create New Project';
     //
     createProjectBtn.addEventListener('click', () => {
