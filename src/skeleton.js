@@ -39,15 +39,20 @@ export class Build {
   }
   project() {
     const project = document.createElement('div');
-    const createProjectBtn = document.createElement('button');
+    let createProjectBtn = document.createElement('button');
     const projectBody = document.createElement('div');
     //
     project.className = 'project';
+    createProjectBtn.id = 'createProjectBtn';
     projectBody.className = 'project-body';
     //
     project.innerHTML = 'Complete Icewind Dale';
     createProjectBtn.innerHTML = 'Create New Project';
     //
+    createProjectBtn.addEventListener('click', () => {
+      let projectName = prompt('project name: ');
+      console.log(projectName);
+    });
     project.appendChild(createProjectBtn);
     project.appendChild(projectBody);
     content.appendChild(project);
