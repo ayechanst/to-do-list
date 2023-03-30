@@ -4,6 +4,7 @@ body {
 
 /* skeleton */
 .title-container {
+  font-size: 40px;
   display: flex;
   justify-content: center;
   background-color: palegoldenrod;
@@ -15,15 +16,43 @@ body {
   background-color: darkkhaki;
 }
 
-.foot {
+.daily-items-container {
+  display: flex;
+  background-color: pink;
+  width: 300px;
+  flex-basis: 300px;
+}
+
+/* Project Page on the home page */
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  background-color: paleturquoise;
+  flex-basis: 700px;
+}
+
+.projects-header {
+  background-color: cornsilk;
+  flex-basis: 500px;
+}
+
+.projects-nav {
+  background-color: palevioletred;
+  flex-basis: 200px;
+}
+
+.footer-container {
   padding-top: 10px;
   display: flex;
   justify-content: center;
 }
 
-/* project */
+/* project card itself (instantiations) */
 
-.project {
+.project-container {
+  display: flex;
   width: 400px;
+  height: auto;
   background-color: cadetblue;
 }
